@@ -12,11 +12,7 @@ class Autor(
         libros.add(libro)
     }
     fun eliminarLibro(libro: Libro){
-        for (x in libros){
-            if (x == libro){
-                libros.remove(x)
-            }
-        }
+            libros.remove(libro)
     }
 
     override fun toString(): String {
